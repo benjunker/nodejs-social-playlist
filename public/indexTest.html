@@ -1,0 +1,70 @@
+<html>
+<head>
+	<title> Index Test </title>
+	<script src="http://connect.soundcloud.com/sdk-2.0.0.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="scripts/scripts.js"></script>
+	<script type="text/javascript" src="scripts/SCapi.js"></script>
+	<script type="text/javascript" src="scripts/create_main_room.js"></script>
+</head>
+<body>
+
+<!-- app.put('/room/:roomname', doCreateRoom);
+app.get('/room/:roomname', doRetrieveRoom);
+app.delete('/room/:roomname', doDeleteRoom);
+app.post('/room/:roomname/:song', doAddSong);
+app.post('/room/:roomname/static/next', doNextSong);
+app.post('/room/:roomname/:song/upvote', doUpvoteSong);
+app.post('/room/:roomname/:song/downvote', doDownvoteSong);
+app.post('/room/:roomname/static/reorder', doReorderSong) -->
+
+	Create Room
+	<form id='doCreateRoom'>
+		Room Name: <input type="text" name="rn"> 
+		<input type="submit" value="doCreateRoom">
+	</form>
+	Retrieve Room
+	<form id='doRetrieveRoom'>
+		Room Name: <input type="text" name="rn">
+		<input type="submit" value="doRetrieveRoom">
+	</form>
+	Delete Room
+	<form id='doDeleteRoom'>
+		Room Name: <input type="text" name="rn">
+		<input type="submit" value="doDeleteRoom">
+	</form>
+	Add Song
+	<form id='doAddSong'>
+		Room Name: <input type="text" name="rn">
+		Song Name: <input type="text" name="sn">
+		Song URL: <input type="text" name="su">
+		<input type="submit" value="doAddSong">
+	</form>
+	Next Song
+	<form id='doNextSong'>
+		Room Name: <input type="text" name="rn">
+		<input type="submit" value="doNextSong">
+	</form>
+	Upvote Song
+	<form id='doUpvoteSong'>
+		Room Name: <input type="text" name="rn">
+		Song: <input type="text" name="song">
+		<input type="submit" value="doUpvoteSong">
+	</form>
+	Downvote Song
+	<form id='doDownvoteSong'>
+		Room Name: <input type="text" name="rn">
+		Song: <input type="text" name="song">
+		<input type="submit" value="doDownvoteSong">
+	</form>
+	Reorder
+	<form id='doReorderSong'>
+		Room Name: <input type="text" name="rn">
+		<input type="submit" value="doReorder">
+	</form>
+
+	<p><span id="response"></span></p>
+	<p><span id="widget"></span></p>
+</body>
+<script type="text/javascript" src="scripts/apiTest.js"></script>
+</html>

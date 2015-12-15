@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title><%= title %></title>
+	</head>
+	<body>
+		<p> Make sure you are running mongod</p>
+		<p> Usage is /:collection with HTTP methods GET, PUT, or POST</p>
+		<p> For GET add a query string with an attribute/value pair to Retrieve</p>
+		<ul>
+  		<li> Example</li>
+  		<li> http://localhost:50000/fruit?name=pear</li>
+  	</ul>
+		<p> For PUT add a simular string to the request body.</p>
+		<ul>
+		  <li> Make sure to make body encoding application/x-www-form-urlencoded</li>
+		  <li> Example body: name=pear&price=2
+		</ul>
+		</p>
+		<p> For update, use POST with the following body example form:</p>
+		<ul>
+		  <li>find={"name":"pear"}&update={"$set":{"leaves":"green"}}</li>
+ 			<li> The use of double quotes here is very deliberate, and no single quotes are allowed.</li>
+		</ul>
+    <p> For additional testing guidelines, see the commment at the bottom of the routes/dbRoutes.js file.</p>
+	</body>
+</html>
+
+

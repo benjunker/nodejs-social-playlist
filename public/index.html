@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Social Playlist - Home</title>
+  <!--Import Google Icon Font-->
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+
+  <script src="http://connect.soundcloud.com/sdk-2.0.0.js"></script>
+  <script type = "text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  
+  <script type="text/javascript" src="scripts/materialize.min.js"></script>
+
+  <!-- HTML 5 Soundcloud Widget -->
+  <script type="text/javascript" src="scripts/SCapi.js"></script>
+
+  <script type="text/javascript" src="scripts/index.js"></script>
+
+  <script type="text/javascript" src="scripts/create_main_room.js"></script>
+  
+</head>
+<body class = "grey darken-3">
+  <!-- <h1>Welcome to the Social Playlist</h1>
+  <a href=host.html>Host</a>
+  <br>
+  <a href=contribute.html>Room</a> -->
+
+
+
+  <!-- Used my WebDev Term Project from 67-250 Spring 2015 as a jumping off point -->
+  <div class="navbar-fixed">
+    <nav class="grey darken-3 z-depth-2">
+      <div class="nav-wrapper">
+        <!-- <img style="max-height:64px;width:auto" src="img/Potential_Logo.png"> -->
+        <a href="index.html" class="brand-logo light">Social Playlist</a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="host.html">Host</a></li>
+          <li><a href="contribute.html">Contribute</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="host.html">Host</a></li>
+          <li><a href="contribute.html">Contribute</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <h4 class="center grey-text text-lighten-4">Welcome to the Social Playlist</h4>
+  <br />
+    <div class="slider hide-on-med-and-down">
+      <ul class="slides">
+        <li>
+          <img src="img/friends.jpg">
+          <!-- From: http://thespiritscience.net/wp-content/uploads/2015/09/group-of-friends.jpg -->
+          <div class="caption left-align">
+            <h3 class ="white-text text-lighten-0">Listen to Music With Your Friends</h3>
+            <!-- <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5> -->
+          </div>
+        </li>
+        <li>
+          <img src="img/soundcloud.jpg">
+          <!-- From: http://mixdynamix.com/wp-content/uploads/2013/01/back-soundcloud3.jpg -->
+          <div class="caption right-align">
+            <h3 class="white-text text-lighten-0">Play Songs From SoundCloud</h3>
+            <!-- <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5> -->
+          </div>
+        </li>
+      </ul>
+    </div>
+  <div class="container grey lighten-1 z-depth-1">
+    <div class="row">
+      <br />
+      <div class="col s12 grey lighten-1 z-depth-2 grey-text text-lighten-2">
+    <!-- <div class="video-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3036.5433768697635!2d-79.99921469999998!3d40.44110890000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sshoe+stores!5e0!3m2!1sen!2sus!4v1430075676272" width="600" height="450" frameborder="0" style="border:0"></iframe>
+   </div> -->
+  </div>
+  <div class="col s12">
+    <br /><!-- <br /> -->
+  </div>
+  
+
+      <div class="col s4 offset-s1 z-depth-2 grey">
+         <h5 class="center">Host the Playlist</h5>
+         <br />
+         <div class="center">
+          <form id="host">
+            <button class="btn waves-effect waves-light orange darken-3 grey-text text-darken-2" type="submit">Host
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="col s4 offset-s2 z-depth-2 grey">
+         <h5 class="center">Contribute to the Playlist</h5>
+         <br />
+         <div class="center">
+          <form id="join">
+            <button class="btn waves-effect waves-light orange darken-3 grey-text text-darken-2" type="submit">Contribute
+            </button>
+          </form>
+        </div>
+      </div>
+    </form>
+
+      <!-- <br /> -->
+    </div>
+    <br />
+  </div>
+  <br></br>
+  <br></br>
+  <br></br>
+  <footer class="page-footer grey darken-2 z-depth-2">
+    <div class="row">
+      
+      <div class="col s12 m6 offset-m3 center">
+  <a href="index.html">Home</a>&nbsp;&nbsp;::&nbsp;&nbsp;
+  <a href="about.html">About</a>&nbsp;&nbsp;::&nbsp;&nbsp;
+  <a href="#">Back to top</a>
+<div class="col s12 center">
+  <br />
+  <a href = "http://www.facebook.com" target = "_blank"><img class = "responsive-img" style= "max-width: 10%" src="img/facebook.jpg"><a>
+    <!-- Image Source: http://static1.squarespace.com/static/539fd1ffe4b0273cffe33e5d/t/53bf4863e4b0900fa06dd493/1405044836397/ -->
+          <a href = "http://www.twitter.com" target = "_blank"><img class = "responsive-img" style= "max-width: 10%" src="img/twitter.jpg"><a>
+            <!-- Image Source: http://negronews.fr/wp-content/uploads/2013/08/LE-BLACK-TWITTER-EN-MARCHE.jpg -->
+
+</div>
+<div class="col s12">
+<br />
+  <div class="footer-copyright">
+    Webmaster: Benjamin Junker
+    &nbsp;&nbsp;&nbsp;Copyright 2015:&nbsp; <a href="#">Benjamin Junker</a>
+    
+  </div>
+  </div>
+      </div>
+      </div>
+  </div>
+  </footer>
+</body>
+<script src='scripts/mat.js'></script>
+</html>

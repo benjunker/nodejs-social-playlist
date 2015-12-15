@@ -1,0 +1,116 @@
+<html>
+<head>
+	<title> Social Playlist - Host </title>
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<script src="http://connect.soundcloud.com/sdk-2.0.0.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts/materialize.min.js"></script> 
+	<script src="/socket.io/socket.io.js"></script>
+	<script type="text/javascript" src="scripts/SCapi.js"></script>
+	<script type="text/javascript" src="scripts/hostPre.js"></script>
+	<script type="text/javascript" src="scripts/create_main_room.js"></script>
+</head>
+<body class='grey darken-3'>
+  <div class="navbar-fixed">
+    <nav class="grey darken-3 z-depth-2">
+      <div class="nav-wrapper">
+        <!-- <img style="max-height:64px;width:auto" src="img/Potential_Logo.png"> -->
+        <a href="index.html" class="brand-logo light">Social Playlist</a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="host.html">Host</a></li>
+          <li><a href="contribute.html">Contribute</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="host.html">Host</a></li>
+          <li><a href="contribute.html">Contribute</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <br></br>
+	<div class='container grey darken-2 z-depth-1'>
+		<div class='row'>
+			<br>
+			<div class='col s5 offset-s1 z-depth-1 center'>
+				<br>
+				<b>Open the Room Page in a new window to choose songs</b>
+				<br>&nbsp;
+			</div>
+			<div class='col s4 offset-s1 z-depth-1 center'>
+				<br>
+				<!-- <b>Username: </b><span id='username'></span> -->
+				<b>Start your Playlist by Clicking Start!</b>
+				<br>&nbsp;
+			</div>
+			<br>&nbsp;
+		</div>
+		<div class='row' id='allWidget'>
+			<div class='col s12'>
+				<br>
+				<div class='col s12 grey darken-1 z-depth-2 grey-text text-lighten-2' id="widget"></div>
+				<form id='doStartPlaylist'>
+					<button class="btn waves-effect waves-light orange darken-3 white-text text-darken-0 right" type="submit">Start
+		            </button>
+				</form>
+				<br class='right'>
+			</div>
+		</div>
+		<br></br>
+		<div class='row' id='other_content'>
+			<div class='col s12'>
+				<div class='col s6 offset-s1 grey darken-3 white-text z-depth-3'>
+					<h5>Up Next:</h5><br>
+					<span id="playlist"></span>
+				</div>
+				<!-- <br></br> -->
+				<div class='col s3 offset-s1 z-depth-1 hide'>
+					<b>Response</b><br></br>
+					<span id="response"></span>
+				</div>
+			</div>
+		</div>
+		<br></br>
+		<br></br>
+	</div>
+	<br></br>
+  <br></br>
+  <br></br>
+	 <footer class="page-footer grey darken-2 z-depth-2">
+    <div class="row">
+      
+      <div class="col s12 m6 offset-m3 center">
+  <a href="index.html">Home</a>&nbsp;&nbsp;::&nbsp;&nbsp;
+  <a href="about.html">About</a>&nbsp;&nbsp;::&nbsp;&nbsp;
+  <a href="#">Back to top</a>
+<div class="col s12 center">
+  <br />
+  <a href = "http://www.facebook.com" target = "_blank"><img class = "responsive-img" style= "max-width: 10%" src="img/facebook.jpg"><a>
+    <!-- Image Source: http://static1.squarespace.com/static/539fd1ffe4b0273cffe33e5d/t/53bf4863e4b0900fa06dd493/1405044836397/ -->
+          <a href = "http://www.twitter.com" target = "_blank"><img class = "responsive-img" style= "max-width: 10%" src="img/twitter.jpg"><a>
+            <!-- Image Source: http://negronews.fr/wp-content/uploads/2013/08/LE-BLACK-TWITTER-EN-MARCHE.jpg -->
+
+</div>
+<div class="col s12">
+<br />
+  <div class="footer-copyright">
+    Webmaster: Benjamin Junker
+    &nbsp;&nbsp;&nbsp;Copyright 2015:&nbsp; <a href="#">Benjamin Junker</a>
+    
+  </div>
+  </div>
+      </div>
+      </div>
+  </div>
+  </footer>
+</body>
+<script type="text/javascript" src="scripts/apiTest.js"></script>
+<script type="text/javascript" src="scripts/hostPost.js"></script>
+<script src='scripts/mat.js'></script>
+</html>

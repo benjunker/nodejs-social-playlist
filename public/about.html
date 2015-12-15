@@ -1,0 +1,111 @@
+<html>
+<head>
+	<title> Social Playlist - About </title>
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<script src="http://connect.soundcloud.com/sdk-2.0.0.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts/materialize.min.js"></script> 
+	<script src="/socket.io/socket.io.js"></script>
+	<script type="text/javascript" src="scripts/SCapi.js"></script>
+	<script type="text/javascript" src="scripts/create_main_room.js"></script>
+</head>
+<body class='grey darken-3'>
+  <div class="navbar-fixed">
+    <nav class="grey darken-3 z-depth-2">
+      <div class="nav-wrapper">
+        <!-- <img style="max-height:64px;width:auto" src="img/Potential_Logo.png"> -->
+        <a href="index.html" class="brand-logo light">Social Playlist</a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="host.html">Host</a></li>
+          <li><a href="contribute.html">Contribute</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="host.html">Host</a></li>
+          <li><a href="contribute.html">Contribute</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <br></br>
+	<div class='container grey darken-2 z-depth-1'>
+		<div class='row'>
+			<br>
+			<div class='col s6 offset-s3 z-depth-0 center'>
+				<br>
+				<h4><b class='grey-text text-lighten-3'>About the Social Playlist</b></h4>
+				<!-- <br>&nbsp; -->
+			</div>
+			<br>&nbsp;
+		</div>
+		<br></br>
+		<div class="row">
+			<div class="col s12">
+				<ul class="tabs grey">
+					<li class="tab col s4"><a class="active" href="#about_general">About</a></li>
+					<li class="tab col s4"><a href="#host">Host</a></li>
+					<li class="tab col s4"><a href="#contribute">Contribute</a></li>
+				</ul>
+			</div>
+			&nbsp;<br class='center'>&nbsp;
+			<div id="about_general" class="col s10 offset-s1 flow-text left grey z-depth-2 white-text">
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;Welcome to the Social Playlist. This is a web application that allows you to play music with friends. You can search for any song/sound on SoundCloud and add it to a collaborative playlist. Then, you and your friends can all decide on the order by 'upvoting' or 'downvoting' songs. <br></br>
+				&nbsp;&nbsp;&nbsp;&nbsp;If you want to jump right in, click on one of the links to the 'Host' or 'Contribute' pages <span class='hide-on-med-and-down'>at the top of this page</span><span class='hide-on-large-only'>in the drag-out menu</span>. Otherwise, click on the 'Host' or 'Contribute' tab on this page to learn more.
+				&nbsp;<br>&nbsp;
+			</div>
+			<div id="host" class="col s10 offset-s1 flow-text left grey z-depth-2 white-text">
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;By hosting the playlist, you play the music for your friends. You can start and stop the music from the Host page, as well as see what songs are up next. If you're wondering what song is coming up next, simply click on the song name. Each song name is a link to that song on SoundCloud. Unfortunately, you cannot add songs from the host page. (But, never fear, you can still contribute from a separate tab or window!)<br></br>
+				&nbsp;&nbsp;&nbsp;&nbsp;One caveat of hosting is that there cannot be two hosts at once. If one of your friends decides to host the playlist, you'll have to contribute for a while and wait until it's your turn to host again. Also, if you decide to stop hosting, all of your friends will be kicked out of the contribution page, and the playlist will reset, so your friends can pick a new host and start a whole new playlist. The only exception to that rule is if you are the only one using the Social Playlist, you can switch between the Host and Contribution pages without issue!
+				&nbsp;<br>&nbsp;
+			</div>
+			<div id="contribute" class="col s10 offset-s1 flow-text left grey z-depth-2 white-text">
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;By contributing to the Social Playlist, you can contribute to picking music with friends. You can search for songs from SoundCloud and add them to the playlist, 'upvote' and 'downvote' songs (but not more than once per song!) to contribute to the order, or just sit back and watch it all happen. If you're wondering what song is coming up next or about one of your search results, simply click on the song name. Each song name is a link to that song on SoundCloud.<br></br>
+				&nbsp;&nbsp;&nbsp;&nbsp;Be careful, though. If the playlist's host leaves, you'll be kicked out of the contribution page, you'll have the opportunity to start a whole new playlist. If you don't want to start a new playlist, have someone new go to the host page before the old host leaves, then you won't lose your playlist!
+				&nbsp;<br>&nbsp;
+			</div>
+		</div>
+		<br></br>
+		<br></br>
+	</div>
+	<br></br>
+	<br></br>
+	<br></br>
+	 <footer class="page-footer grey darken-2 z-depth-2">
+    <div class="row">
+      
+      <div class="col s12 m6 offset-m3 center">
+  <a href="index.html">Home</a>&nbsp;&nbsp;::&nbsp;&nbsp;
+  <a href="about.html">About</a>&nbsp;&nbsp;::&nbsp;&nbsp;
+  <a href="#">Back to top</a>
+<div class="col s12 center">
+  <br />
+  <a href = "http://www.facebook.com" target = "_blank"><img class = "responsive-img" style= "max-width: 10%" src="img/facebook.jpg"><a>
+    <!-- Image Source: http://static1.squarespace.com/static/539fd1ffe4b0273cffe33e5d/t/53bf4863e4b0900fa06dd493/1405044836397/ -->
+          <a href = "http://www.twitter.com" target = "_blank"><img class = "responsive-img" style= "max-width: 10%" src="img/twitter.jpg"><a>
+            <!-- Image Source: http://negronews.fr/wp-content/uploads/2013/08/LE-BLACK-TWITTER-EN-MARCHE.jpg -->
+
+</div>
+<div class="col s12">
+<br />
+  <div class="footer-copyright">
+    Webmaster: Benjamin Junker
+    &nbsp;&nbsp;&nbsp;Copyright 2015:&nbsp; <a href="#">Benjamin Junker</a>
+    
+  </div>
+  </div>
+      </div>
+      </div>
+  </div>
+  </footer>
+</body>
+<script src='scripts/mat.js'></script>
+</html>
