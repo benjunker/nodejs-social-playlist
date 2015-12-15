@@ -2,12 +2,13 @@ var role = 'host';
 var roomname;
 var counter = 0;
 var bound_already = false;
-// ^localStorage
+
 if (window.location.href.indexOf("rhcloud") > -1){
 	var socket = io.connect("http://nodejs-bjunker.rhcloud.com:8000");
 } else {
 	var socket = io.connect();
 }
+//^ detect whether on openshift or not
 
 // socket.on('players', function (data) {
 //   console.log(data);
@@ -70,7 +71,7 @@ socket.on('kick_other_hosts', function() {
 socket.on('redirect_host_buffer', function() {
 	window.location.replace("hostBuffer.html");
 });
-
+//^ socket.io stuff
 
 
 
@@ -118,6 +119,7 @@ finish = function(){
 	// console.log(counter);
 	// console.log('*');
 	counter++;
+	//nested in-callback AJAX calls seemed like the best way to implement a structured order to fn calls
 	$.ajax({
 		url: 'room/' + roomname + '/static/next',
 		type: 'POST',
@@ -134,6 +136,7 @@ finish = function(){
 			widget.load(result, { auto_play: true });
 			if (bound_already == false) {
 				widget.bind(SC.Widget.Events.FINISH, finish);
+				//This causes the next song to start when the last song is finished
 				bound_already = true;
 			}
 			$.ajax({

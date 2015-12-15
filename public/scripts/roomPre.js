@@ -37,6 +37,9 @@ socket.on('reorder', function(){
 	    		$('#playlist').html("<h5 class='white-text'>Playlist:</h5><br><b class='white-text'>Nothing... Add more songs!<b>");
 	    	} else {
 				html_string  = html_string + '<h5 class="white-text">Playlist:</h5><br><table class="highlight white-text centered"><thead><tr><th>Song Name</th><th>Upvote</th><th>Downvote</th><th>Votes</th></tr></thead><tbody>';
+				//Using $('#playlist').append(element) would sometimes cause the element to close
+		    	//(ie - </element>) before I wanted to. String concatanation seemd like a more
+		    	//flexible alternative.
 				result.songs.forEach(function(songobj, index, array){
 					html_string = html_string+'<tr><td><a target="_blank" href='+songobj.songInfo.songURL+' class="white-text">'+songobj.songInfo.songName+'</a></td><td>'+ '<img id="up'+index+'" src="img/upvote.png" height="30" width="30" class="center">' + '</td><td>'+ '<img id="down'+ index +'" src="img/downvote.png" height="30" width="30" class="center">' +'</td><td>'+songobj.votes+'</td></tr>';
 					// Upvote Image: http://i.imgur.com/HRgF1g0.png
@@ -130,8 +133,7 @@ socket.on('do_session_update', function(data) {
 		}
 	});
 });
-
-
+//^ lots of socket.io
 
 
 
@@ -167,6 +169,9 @@ $(function (){
 							return
 						} else {
 							html_string  = html_string + '<table class="highlight white-text centered"><thead><tr><th>Song Name</th><th>Add to Playlist</th></tr></thead><tbody>';
+							//Using $('#playlist').append(element) would sometimes cause the element to close
+		    				//(ie - </element>) before I wanted to. String concatanation seemd like a more
+		    				//flexible alternative.
 							tracks.forEach(function(track, index, array){
 								html_string = html_string+'<tr><td><a target="_blank" href='+track.permalink_url+' class="white-text">'+track.title+'</a></td><td>'+ '<img id="add'+index+'" src="img/add.png" height="30" width="30" class="center">' + '</td></tr>';
 								// Image From: https://cdn0.iconfinder.com/data/icons/social-messaging-ui-color-shapes/128/add-circle-green-128.png

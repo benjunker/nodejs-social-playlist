@@ -5,3 +5,5 @@ $(document).ready(function(){
 $( document ).ready(function(){
       $(".button-collapse").sideNav();
       });
+
+//This is so materialize stuff will move on the page

@@ -1,3 +1,7 @@
+//These are the scipts for my 'superuser' page (ie - my page that can call the majority of my 
+//http routes)
+//It remains for debugging purposes
+
 // app.put('/room/:roomname', doCreateRoom);
 // app.get('/room/:roomname', doRetrieveRoom);
 // app.delete('/room/:roomname', doDeleteRoom);
@@ -135,5 +139,4 @@ $(function (){
 		event.preventDefault();
 	});
 });
-
 

@@ -15,3 +15,4 @@ $(function (){
 });
 
 
+// These are functions for buttons
